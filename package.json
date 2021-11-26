@@ -1,0 +1,34 @@
+{
+  "name": "S04E01 💯 Cloud Server",
+  "version": "0.0.0",
+  "description": "practica1",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo \"Iniciando Programa... 💽\" && node index",
+    "dev": "set enviroment=DEVELOPMENT && nodemon  index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlosIAtI/S04E01-Cloud-Server"
+  },
+  "keywords": [
+    "fullstack",
+    "es6",
+    "javascript"
+  ],
+  "author": "@carlosIAtI",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carlosIAtI/S04E01-Cloud-Serve/issues"
+  },
+  "homepage": "https://github.com/carlosIAtI/S04E01-Cloud-Server#readme",
+  "type": "module",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "http": "^0.0.1-security"
+  }
+}
