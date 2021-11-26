@@ -23,30 +23,19 @@ app.use((req, _, next) => {
   console.log(`Se ha realizado la peticion: "${req.method}: ${req.path}"`);
   next();
 });
-app.use('/about', (_, res) => {
-  res.send('<h1>Peticion a ruta about</h1>');
+app.use('/author', (_, res) => {
+  res.send(`<h1>Carlos Hernandez Martinez </h1>
+    <h1>Programacion Web en pila completa 1 </h1>
+    <h1>S04E01 💯 Cloud Server</h1>`);
 });
 
-app.use('/add-student-form', (_, res) => {
-  res.send(`
-  <form action="/add-student" method="POST">
-  <label for="student-name">Student name</label>
-  <input type="text" name="name" id="student-name">  
-  <button type="submit">Add student</button>
-  </form>
-  `);
-});
-
-app.use('/add-student', (req, res, next) => {
-  for (const prop in req.body) {
-    console.log(`${prop}: ${req.body[prop]}`);
-  }
-  console.log(`🚩 Metodo: ${req.method}`);
-  res.json(req.body);
-});
 
 app.use(['/', '/home'], (_, res) => {
-  res.send('<h1>Hola Mundo!!</h1>');
+  res.send(`
+  <h1>Temperatura</h1>
+   <h1>Conservador de grados</h1>
+     
+    `);
 });
 
 // poniendo a escuchar la aplicacion de express
